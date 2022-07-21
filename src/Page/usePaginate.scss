@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: #202020;
+}
+.container {
+  h1 {
+    color: #fff;
+    font-family: sans-serif;
+    span {
+      color: #2e4f;
+      font-family: sans-serif;
+    }
+    small {
+      color: pink;
+      font-family: sans-serif;
+      margin-right: 20px;
+    }
+  }
+}
