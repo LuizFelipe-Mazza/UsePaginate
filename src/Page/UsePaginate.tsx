@@ -1,5 +1,15 @@
+import { Box, Button } from "@material-ui/core";
+import usePaginate from "../Hooks/CustomHook";
 import "./usePaginate.scss";
-export default function UsePaginate() {
+
+type Props = {
+  useBordersButtons: boolean;
+};
+export default function UsePaginate(props: Props) {
+  const pages = usePaginate({ current, total, pageSize });
+
+  // O componente de paginação deverá ter a opção de aceitar ou não (próximo e anterior)
+
   return (
     <>
       <div className="container">
@@ -8,7 +18,11 @@ export default function UsePaginate() {
           <small> Custom Hooks</small>
         </h1>
 
-        <div className="paginateBody"></div>
+        <div>
+          {pages?.map((item) => {
+            return <Button>{item}</Button>;
+          })}
+        </div>
       </div>
     </>
   );
