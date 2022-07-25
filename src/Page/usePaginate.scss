@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #202020;
+  background: #fff;
 }
 .container {
   h1 {
@@ -20,9 +20,9 @@ body {
       margin-right: 20px;
     }
   }
-  table{
-    border: #202020 1px solid;
-
-
-}
+  .btnPaginate {
+    transition: .1s ease;
+    background: crimson;
+    color: #fff;
+  }
 }
